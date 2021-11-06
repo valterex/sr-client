@@ -4,7 +4,7 @@ import { Match, MatchesState } from "../../../types";
 const initialState: MatchesState = {
   isLoadingMatches: false,
   loadingMatchesError: null,
-  matches: null,
+  matches: [],
 };
 
 export const matches = createSlice({

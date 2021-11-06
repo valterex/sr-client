@@ -12,7 +12,7 @@ const api = new Api();
 
 export class MatchesThunks {
   getMatches =
-    (id: number): AppThunk =>
+    (id: string): AppThunk =>
     async (dispatch) => {
       try {
         dispatch(getMatchesDispatched());

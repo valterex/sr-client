@@ -1,4 +1,4 @@
 export interface Tournament {
-  id: number;
+  id: string;
   name: string;
 }

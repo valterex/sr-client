@@ -4,7 +4,7 @@ import { Tournament, TournamentsState } from "../../../types";
 const initialState: TournamentsState = {
   isLoadingTournaments: false,
   loadingTournamentsError: null,
-  tournaments: null,
+  tournaments: [],
   selectedTournament: null,
 };
 
@@ -29,7 +29,7 @@ export const tournaments = createSlice({
       state.isLoadingTournaments = false;
       state.loadingTournamentsError = action.payload;
     },
-    setTournament: (state: TournamentsState, action: PayloadAction<number>) => {
+    setTournament: (state: TournamentsState, action: PayloadAction<string>) => {
       state.selectedTournament = action.payload;
     },
   },

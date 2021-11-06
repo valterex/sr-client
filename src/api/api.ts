@@ -9,7 +9,7 @@ export class Api {
     return response.data;
   }
 
-  async getMatches(id: number): Promise<Array<Match>> {
+  async getMatches(id: string): Promise<Array<Match>> {
     const response = await axios.get(`${this.baseURL}/matches/${id}`);
     return response.data;
   }
