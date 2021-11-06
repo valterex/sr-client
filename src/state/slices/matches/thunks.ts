@@ -1,31 +1,16 @@
 import { Api } from "../../../api";
 import { AppThunk } from "../../store";
+import { setTournament } from "../tournaments/slice";
 
 import {
   getMatchesDispatched,
   getMatchesErrored,
   getMatchesSuccessful,
-  getTournamentsDispatched,
-  getTournamentsErrored,
-  getTournamentsSuccessful,
-  setTournament,
 } from "./slice";
 
 const api = new Api();
 
 export class MatchesThunks {
-  getTournaments = (): AppThunk => async (dispatch) => {
-    try {
-      dispatch(getTournamentsDispatched());
-      const data = await api.getTournaments();
-      dispatch(getTournamentsSuccessful(data));
-    } catch (err) {
-      if (err instanceof Error) {
-        dispatch(getTournamentsErrored(err.message));
-      }
-    }
-  };
-
   getMatches =
     (id: number): AppThunk =>
     async (dispatch) => {
