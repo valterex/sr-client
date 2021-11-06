@@ -2,7 +2,7 @@ import axios from "axios";
 import { Match, Tournament } from "../types";
 
 export class Api {
-  baseURL = `${process.env.REACT_APP_API_BASE_URL}`;
+  baseURL = "http://localhost:3001";
 
   async getTournaments(): Promise<Array<Tournament>> {
     const response = await axios.get(`${this.baseURL}/tournaments`);

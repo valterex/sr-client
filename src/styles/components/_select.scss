@@ -1,0 +1,11 @@
+@import "../global";
+
+.select {
+  font-size: $font-sm;
+  color: $color-gray;
+  padding: 10px 10px 10px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(146, 146, 146, 0.5);
+  background-color: $color-white;
+  outline: none;
+}
