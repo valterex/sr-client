@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Match, MatchesState } from "../../../types";
+import { Match, MatchesState } from "../../types";
 
 const initialState: MatchesState = {
   isLoadingMatches: false,

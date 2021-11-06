@@ -1,5 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Tournament, TournamentsState } from "../../../types";
+import { Api } from "../../api";
+import { Tournament, TournamentsState } from "../../types";
+import { AppThunk } from "../store";
 
 const initialState: TournamentsState = {
   isLoadingTournaments: false,

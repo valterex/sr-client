@@ -1,6 +1,6 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import { matches } from "./slices/matches/slice";
-import { tournaments } from "./slices/tournaments/slice";
+import { matches } from "./matches/matches.slice";
+import { tournaments } from "./tournaments/tournaments.slice";
 
 const rootReducer = combineReducers({
   matches: matches.reducer,
