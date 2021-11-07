@@ -6,7 +6,7 @@ interface MatchResult {
 }
 
 export interface Match {
-  id: number;
+  id: string;
   time: any;
   result: MatchResult;
   homeTeam: string;
