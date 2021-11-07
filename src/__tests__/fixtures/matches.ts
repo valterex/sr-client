@@ -3,7 +3,14 @@ import { Match } from "../../types";
 export const match: Array<Match> = [
   {
     id: "26548996",
-    time: 1621695600,
+    time: {
+      _doc: "time",
+      time: "15:00",
+      date: "03/04/21",
+      tz: "UTC",
+      tzoffset: 0,
+      uts: 1617462000,
+    },
     result: {
       home: 4,
       away: 0,
