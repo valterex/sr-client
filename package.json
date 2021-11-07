@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test  --testPathIgnorePatterns=__tests__/fixtures",
+    "test": "react-scripts test   --watchAll --testPathIgnorePatterns=__tests__/fixtures",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
