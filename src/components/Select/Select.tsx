@@ -1,4 +1,6 @@
 import { ChangeEvent } from "react";
+import { Tournament } from "../../types";
+import "./Select.scss";
 
 interface SelectProps<T> {
   items: Array<T>;
@@ -10,9 +12,9 @@ export const Select = ({
   items,
   label,
   handleSelection,
-}: SelectProps<{ id: string; name: string }>) => {
+}: SelectProps<Tournament>) => {
   return (
-    <select onChange={handleSelection}>
+    <select className="select" onChange={handleSelection}>
       <option value="" selected disabled hidden>
         {label}
       </option>
