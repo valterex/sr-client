@@ -1,4 +1,4 @@
-import { Tournament, Match } from ".";
+import { Match, Tournament } from ".";
 
 export interface TournamentsState {
   isLoadingTournaments: boolean;

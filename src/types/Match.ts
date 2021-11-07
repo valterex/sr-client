@@ -5,11 +5,20 @@ interface MatchResult {
   winner: "home" | "away";
 }
 
+interface MatchTime {
+  _doc: "time";
+  time: string;
+  date: string;
+  tz: "UTC";
+  tzoffset: number;
+  uts: number;
+}
+
 export interface Match {
   id: string;
-  time: any;
+  time: MatchTime;
   result: MatchResult;
   homeTeam: string;
   awayTeam: string;
-  events: Array<string>;
+  events: string;
 }
