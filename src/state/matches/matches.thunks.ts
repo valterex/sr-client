@@ -16,10 +16,10 @@ export const getMatches =
     try {
       dispatch(getMatchesDispatched());
 
-      const data = await api.getMatches(id);
+      const matches = await api.getMatches(id);
 
       dispatch(setTournament(id));
-      dispatch(getMatchesSuccessful(data));
+      dispatch(getMatchesSuccessful(matches));
     } catch (err) {
       if (err instanceof Error) {
         dispatch(getMatchesErrored(err.message));
