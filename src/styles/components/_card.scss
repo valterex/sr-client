@@ -1,0 +1,11 @@
+@import "../global";
+
+.card-header {
+  background: #00003c;
+  color: $color-white;
+  font-size: $font-lg;
+}
+
+.card-text {
+  color: $color-light-gray;
+}
