@@ -1,5 +1,8 @@
 import "./Spinner.scss";
 
-export const Spinner = () => {
-  return <div className="spinner"></div>;
+interface SpinnerProps {
+  id?: string;
+}
+export const Spinner = ({ id }: SpinnerProps) => {
+  return <div className="spinner" id={id}></div>;
 };
